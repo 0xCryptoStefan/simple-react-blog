@@ -1,14 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Create() {
+  // can update this to pull a list of possible authors or to choose the logged in user to populate the author automatically
   const listOfAuthors = ["mario", "luigi"];
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState(listOfAuthors[0]);
   const [isPending, setIsPending] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     const blog = { title, body, author };
 
     setIsPending(true);
@@ -20,6 +23,7 @@ export default function Create() {
     }).then(() => {
       console.log("new blog added");
       setIsPending(false);
+      navigate("/");
     });
   };
 

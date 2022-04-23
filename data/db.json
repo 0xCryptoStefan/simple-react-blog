@@ -19,28 +19,16 @@
       "id": 3
     },
     {
-      "title": "New blog title",
-      "body": "new blog body",
-      "author": "",
-      "id": 4
-    },
-    {
-      "title": "blog",
-      "body": "blog blog blog",
+      "title": "another new blog",
+      "body": "using this blog to test useNavigate instead of useHistory as I am using React Router V6 and the tutorial is based on React Router V5.",
       "author": "mario",
-      "id": 5
+      "id": 8
     },
     {
-      "title": "test blog",
-      "body": "new blog I am adding",
-      "author": "yoshi",
-      "id": 6
-    },
-    {
-      "title": "test blog 2",
-      "body": "new blog I am adding 2",
-      "author": "yoshi",
-      "id": 7
+      "title": "When I submit this blog...",
+      "body": "...it should take me back to the home page on route '/'",
+      "author": "mario",
+      "id": 9
     }
   ]
 }

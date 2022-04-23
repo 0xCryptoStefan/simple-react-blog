@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./routes/Home";
 import Create from "./routes/Create";
 import BlogDetails from "./routes/BlogDetails";
+import Error404 from "./routes/Error404";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </div>
       </div>
