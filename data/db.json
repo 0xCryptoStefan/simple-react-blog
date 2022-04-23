@@ -17,6 +17,30 @@
       "body": "The quick brown fox jumps over the lazy dog",
       "author": "Foxy Dog",
       "id": 3
+    },
+    {
+      "title": "New blog title",
+      "body": "new blog body",
+      "author": "",
+      "id": 4
+    },
+    {
+      "title": "blog",
+      "body": "blog blog blog",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "test blog",
+      "body": "new blog I am adding",
+      "author": "yoshi",
+      "id": 6
+    },
+    {
+      "title": "test blog 2",
+      "body": "new blog I am adding 2",
+      "author": "yoshi",
+      "id": 7
     }
   ]
 }
