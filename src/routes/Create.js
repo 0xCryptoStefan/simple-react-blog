@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ENDPOINT } from "../modules/GlobalConstants";
 
 export default function Create() {
   // can update this to pull a list of possible authors or to choose the logged in user to populate the author automatically
@@ -16,7 +17,7 @@ export default function Create() {
 
     setIsPending(true);
 
-    fetch("http://localhost:8000/blogs", {
+    fetch(ENDPOINT.baseURL + ENDPOINT.blogs, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(blog),

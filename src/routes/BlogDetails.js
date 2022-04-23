@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
+import { ENDPOINT } from "../modules/GlobalConstants";
 
 export default function BlogDetails() {
   const { id } = useParams();
@@ -9,11 +10,11 @@ export default function BlogDetails() {
     data: blog,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch(ENDPOINT.baseURL + ENDPOINT.blogpost + id);
   const navigate = useNavigate();
 
   function handleDelete(event) {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
+    fetch(ENDPOINT.baseURL + ENDPOINT.blogpost + blog.id, {
       method: "DELETE",
     }).then(() => navigate("/"));
   }

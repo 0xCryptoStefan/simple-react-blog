@@ -1,13 +1,14 @@
 import React from "react";
 import BlogList from "../components/BlogList";
 import useFetch from "../hooks/useFetch";
+import { ENDPOINT } from "../modules/GlobalConstants";
 
 export default function Home() {
   const {
     data: blogs,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch(ENDPOINT.baseURL + ENDPOINT.blogs);
 
   return (
     <div className="home">

@@ -29,6 +29,12 @@
       "body": "...it should take me back to the home page on route '/'",
       "author": "mario",
       "id": 9
+    },
+    {
+      "title": "Post ENDPOINT test",
+      "body": "Testing after changing the API endpoint to be an imported variable.",
+      "author": "mario",
+      "id": 10
     }
   ]
 }
